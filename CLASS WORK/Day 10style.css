@@ -1,0 +1,26 @@
+/*universal selector*/
+*{
+    background-color: rgb(233, 156, 61);
+    font-size: 10px;
+    
+}
+
+/*id selector*/
+#class{
+    background-color:rgb(197, 98, 98);
+}
+
+/*class selector*/
+.heading{
+    background-color: rgb(67, 203, 158);
+}
+
+/*Element selector*/
+p.head{
+    background-color: rgb(167, 136, 205);
+}
+
+/*Attribute selector*/
+p[target]{
+    background-color: rgb(129, 228, 144);
+}
