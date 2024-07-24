@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icon Overlay on Image with Hover Effect</title>
+<style>
+ 
+  .container {
+    position: relative;
+    display: inline-block;
+     
+  }
+
+  .image {
+    display: block;
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+  }
+
+  .image:hover {
+    opacity: 0.7; 
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+  }
+
+  .container:hover .icon {
+    opacity: 1; 
+  }
+
+  .icon img {
+    width: 80px; 
+    height: auto;
+    display: block; 
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px; 
+    transition: background-color 0.3s ease; 
+  }
+
+  .icon:hover img {
+    background-color: rgba(236, 234, 234, 0.7);
+  }
+
+
+  div {
+    display: grid;
+    grid-template-rows: 250px 250px 250px 250px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)); 
+    column-gap: 20px;
+
+    h1 {
+        text-align: center;
+        margin-top:20px;
+      }
+    
+      
+      @media (max-width: 768px) {
+        div {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        }
+      }
+  }
+</style>
+</head>
+<body>
+
+<center>
+    <h1><b>Photos</b></h1>
+</center>
+<br>
+<br>
+<div>
+  <div class="container">
+    <img class="image" src="tree.webp" alt="Description of the image" width="300px" height="300px"> 
+    <span class="icon"><img src="images.jpeg" alt="Camera Icon"></span> 
+  </div>
+
+
+<div>
+    <div class="container">
+      <img class="image" src="nature.jpg" alt="Description of the image" width="300px" height="300px"> 
+      <span class="icon"><img src="images.jpeg" alt="Camera Icon"></span> 
+    </div>
+  </div>
+
+  <div>
+    <div class="container">
+      <img class="image" src="river.jpg" alt="Description of the image" width="300px" height="300px"> 
+      <span class="icon"><img src="images.jpeg" alt="Camera Icon"></span> 
+    </div>
+  </div>
+
+  <div>
+    <div class="container">
+      <img class="image" src="Landscape-Color.jpg" alt="Description of the image" width="300px" height="300px"> 
+      <span class="icon"><img src="images.jpeg" alt="Camera Icon"></span> 
+    </div>
+  </div>
+
+
+  <div>
+    <div class="container">
+      <img class="image" src="WhatsApp Image 2023-08-26 at 1.49.40 PM (2).jpeg" alt="Description of the image" width="300px" height="300px"> 
+      <span class="icon"><img src="images.jpeg" alt="Camera Icon"></span> 
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
