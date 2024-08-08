@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <style>
+            section{
+                width:80vw;
+                margin:20px auto;
+                display:grid;
+                grid-template-rows:250px 250px 250px 250px;
+           /*    grid-auto-columns:repeat(5,250px) ; */
+              /*  grid-auto-columns: repeat(4,250px) ;*/
+                  grid-template-columns: repeat(auto-fill,minmax(250px,3fr));
+                column-gap:20px;
+   
+            }
+
+            div{
+                height:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <section>
+            <div class="" style="background-color:rgb(91, 50, 214)">1</div>
+            <div class="" style="background-color:rgb(229, 70, 158)">2</div>
+            <div class="" style="background-color:rgb(238, 47, 47)">3</div>
+            <div class="" style="background-color:rgb(61, 172, 87)">4</div>
+            <div class="" style="background-color:rgb(231, 221, 48)">5</div>
+
+        </section>
+        </div>
+    </body>
+</html>
